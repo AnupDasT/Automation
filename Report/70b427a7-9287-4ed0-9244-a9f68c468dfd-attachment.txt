@@ -1,0 +1,1 @@
+__cfduid=d5b6fb3f59a35af113b2d68a59b2bc4971605548089; expires=Wed, 16-Dec-20 17:34:49 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
