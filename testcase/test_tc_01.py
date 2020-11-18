@@ -6,7 +6,7 @@ url = "https://reqres.in/api/users?page=2"
 response = requests.get(url)
 
 
-@pytest.mark.skip()
+@pytest.mark.tryfirst()
 def test_respsonse_statusCode():
     re_code = response.status_code
     code = 'xxxxxx_state_c'
@@ -16,7 +16,7 @@ def test_respsonse_statusCode():
         print('invalid response')
 
 
-@pytest.mark.Smoke
+@pytest.mark.Skip()
 def test_response_head_eTag():
     re_head = response.headers.get('Etag')
     header_val = print(re_head)
@@ -24,7 +24,7 @@ def test_response_head_eTag():
         assert header_val == re_head
 
 
-@pytest.mark.tryfirst
+@pytest.mark.smoke
 def test_response_head_verifyCookie():
     cookie_head = response.headers.get('Set-Cookie')
     cookie_val = print(cookie_head)
@@ -38,6 +38,15 @@ def test_response_cf_requestID():
     cf_request_val = print(cf_request)
     if cf_request == cf_request_val:
         assert cf_request == cf_request_val
+
+
+@pytest.mark.smoke
+def f():
+    return 3
+
+@pytest.mark.smoke
+def test_function():
+    assert f() == 4
 
 
 # print(response.headers)
