@@ -1,5 +1,5 @@
 python -m ensurepip
-pip install --upgrade pip
-pip install requests
-pip install allure-pytest
-pip install pytest
+easy_install --upgrade pip
+easy_install requests
+easy_install allure-pytest
+easy_install pytest
