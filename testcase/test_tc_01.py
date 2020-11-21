@@ -38,6 +38,7 @@ def test_response_cf_requestID():
     cf_request_val = print(cf_request)
     if cf_request == cf_request_val:
         assert cf_request == cf_request_val
+        
 
 
 @pytest.mark.smoke
