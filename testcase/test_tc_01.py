@@ -41,13 +41,13 @@ def test_response_cf_requestID():
         
 
 
-@pytest.mark.smoke
-def f():
-    return 3
-
-@pytest.mark.smoke
-def test_function():
-    assert f() == 4
+# @pytest.mark.smoke
+# def f():
+#     return 3
+#
+# @pytest.mark.smoke
+# def test_function():
+#     assert f() == 4
 
 
 # print(response.headers)
